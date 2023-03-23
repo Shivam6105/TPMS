@@ -31,7 +31,7 @@ function JobCardDetails() {
   console.log(jobCardDetails);
   return (
     <div className="center">
-      <form onSubmit={handleSubmit}>
+      <form  onSubmit={handleSubmit}>
         <h1>Enter Job Card Details : </h1>
         <label>Yarn Requirement: </label>
         <input

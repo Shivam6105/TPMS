@@ -16,18 +16,28 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <div className="app">
+        <div className="layout">
+        <Layout />
+        </div>
+      <div className="user-form">
+        <div>
         <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="orderdetails" element={<OrderDetails />} />
-            <Route path="jobcarddetials" element={<JobCardDetails />} />
-            <Route path="loomloading" element={<LoomLoading />} />
-            <Route path="registration" element={<Registration />} />
-            <Route path="monitor" element={<Monitoring />} />
-            <Route path="loomanalysis" element={<LoomAnalysis />} />
-            <Route path="shiftanalysis" element={<ShiftAnalysis />} />
-          </Route>
+          <Route path="/" element={<Home />} />
+          <Route path="orderdetails" element={<OrderDetails />} />
+          <Route path="jobcarddetials" element={<JobCardDetails />} />
+          <Route path="loomloading" element={<LoomLoading />} />
+          <Route path="registration" element={<Registration />} />
+          <Route path="monitor" element={<Monitoring />} />
+          <Route path="loomanalysis" element={<LoomAnalysis />} />
+          <Route path="shiftanalysis" element={<ShiftAnalysis />} />
         </Routes>
+        </div>
+      
+      </div>
+        
+      </div>
+        
       </BrowserRouter>
     </>
   );
